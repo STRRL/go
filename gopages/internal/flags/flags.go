@@ -17,6 +17,7 @@ type Args struct {
 	OutputPath         string
 	SiteDescription    string
 	SiteTitle          string
+	GoogleAnalytics    string
 	Watch              bool // not added as a flag, only enabled when running from ./cmd/watch
 }
 
@@ -31,6 +32,7 @@ func Parse(osArgs ...string) (Args, string, error) {
 	commandLine.BoolVar(&args.GitHubPages, "gh-pages", false, "Automatically commit the output path to the gh-pages branch. The current branch must be clean.")
 	commandLine.StringVar(&args.GitHubPagesUser, "gh-pages-user", "", "The Git username to push with")
 	commandLine.StringVar(&args.GitHubPagesToken, "gh-pages-token", "", "The Git token to push with. Usually this is an API key.")
+	commandLine.StringVar(&args.GoogleAnalytics, "google-analytics", "", "Google Analytics tracking ID")
 	var output bytes.Buffer
 	commandLine.SetOutput(&output)
 	err := commandLine.Parse(osArgs) // prints usage if fails

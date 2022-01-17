@@ -87,6 +87,24 @@ window.setInterval(poll, timeoutMillis)
 		}
 		return script
 	}
+	funcs["googleAnalyticsScript"] = func() string {
+		if len(args.GoogleAnalytics) == 0 {
+			return ""
+		}
+		return fmt.Sprintf(`
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=%s"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', '%s');
+</script>`,
+			args.GoogleAnalytics,
+			args.GoogleAnalytics,
+		)
+	}
 }
 
 func readTemplates(pres *godoc.Presentation, funcs template.FuncMap, fs vfs.FileSystem) {

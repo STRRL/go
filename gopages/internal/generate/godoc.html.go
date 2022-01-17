@@ -97,6 +97,7 @@ Build version {{html .Version}}.<br>
 </div><!-- .container -->
 </div><!-- #page -->
 </body>
+{{ googleAnalyticsScript }}
 </html>
 `
 )
