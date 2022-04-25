@@ -7,9 +7,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/johnstarich/go/gopages/cmd"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/strrl/go/gopages/cmd"
 )
 
 func TestDocUpToDate(t *testing.T) {

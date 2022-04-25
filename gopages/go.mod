@@ -1,4 +1,4 @@
-module github.com/johnstarich/go/gopages
+module github.com/strrl/go/gopages
 
 go 1.16
 

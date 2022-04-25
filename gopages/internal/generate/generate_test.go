@@ -10,9 +10,9 @@ import (
 
 	"github.com/go-git/go-billy/v5/memfs"
 	"github.com/go-git/go-billy/v5/osfs"
-	"github.com/johnstarich/go/gopages/internal/flags"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/strrl/go/gopages/internal/flags"
 )
 
 func TestGenerateDocs(t *testing.T) {

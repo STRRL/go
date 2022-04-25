@@ -10,11 +10,11 @@ import (
 	"github.com/go-git/go-git/v5"
 	"github.com/go-git/go-git/v5/plumbing"
 	"github.com/go-git/go-git/v5/plumbing/object"
-	"github.com/johnstarich/go/gopages/cmd"
-	"github.com/johnstarich/go/gopages/internal/flags"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/strrl/go/gopages/cmd"
+	"github.com/strrl/go/gopages/internal/flags"
 )
 
 func TestMain(t *testing.T) {

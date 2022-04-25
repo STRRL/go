@@ -1,7 +1,7 @@
 // gopages generates static files for Go documentation, formatted with godoc.
 //
 // Installation:
-//   go get github.com/johnstarich/go/gopages
+//   go get github.com/strrl/go/gopages
 //
 // Generate documentation for your module by running without any flags.
 //
@@ -33,6 +33,6 @@
 //     	example, "https://github.com/johnstarich/go/blob/master/gopages/{{.Path}}{{if .Line}}#L{{.Line}}{{end}}"
 //     	generates links compatible with GitHub and GitLab. Must be a valid Go template
 //     	and must generate valid URLs.
-// 
+//
 //
 package main

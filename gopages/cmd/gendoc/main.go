@@ -9,9 +9,9 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/johnstarich/go/gopages/cmd"
-	"github.com/johnstarich/go/gopages/internal/flags"
 	"github.com/pkg/errors"
+	"github.com/strrl/go/gopages/cmd"
+	"github.com/strrl/go/gopages/internal/flags"
 )
 
 func main() {
